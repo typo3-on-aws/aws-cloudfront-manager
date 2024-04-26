@@ -1,0 +1,19 @@
+{
+    "name": "t3rrific/aws-cloudfront-manager",
+    "type": "typo3-cms-extension",
+    "description": "Backend module that lets backend users trigger Amazon CloudFront invalidations",
+    "require": {
+        "typo3/cms-core": "^12",
+        "aws/aws-sdk-php": "^3"
+    },
+    "autoload": {
+        "psr-4": {
+            "T3rrific\\AwsCloudfrontManager\\": "Classes"
+        }
+    },
+    "extra": {
+       "typo3/cms": {
+          "extension-key": "aws_cloudfront_manager"
+       }
+    }
+}

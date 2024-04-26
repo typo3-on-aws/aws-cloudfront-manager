@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-02-22T00:00:00Z" product-name="aws_cloudfront_manager">
+        <header/>
+        <body>
+
+            <trans-unit id="title.listDistributions">
+                <source>CloudFront Distributions</source>
+            </trans-unit>
+            <trans-unit id="title.distributionDetails">
+                <source>Distribution Details</source>
+            </trans-unit>
+
+            <trans-unit id="general.distributionId">
+                <source>Distribution ID</source>
+            </trans-unit>
+            <trans-unit id="general.domainName">
+                <source>Domain Name</source>
+            </trans-unit>
+            <trans-unit id="general.comment">
+                <source>Comment/Description</source>
+            </trans-unit>
+            <trans-unit id="general.domainNameEmpty">
+                <source>not retrieved yet</source>
+            </trans-unit>
+            <trans-unit id="general.commentEmpty">
+                <source>not available</source>
+            </trans-unit>
+
+            <trans-unit id="button.clearCache">
+                <source>Clear CDN Cache</source>
+            </trans-unit>
+            <trans-unit id="button.details">
+                <source>Details</source>
+            </trans-unit>
+            <trans-unit id="button.refresh">
+                <source>Refresh</source>
+            </trans-unit>
+
+            <trans-unit id="flashMessage.invalidationTriggered.title">
+                <source>Invalidation Triggered</source>
+            </trans-unit>
+            <trans-unit id="flashMessage.invalidationTriggered.message">
+                <source>A cache-clear request for the CloudFront distribution %1$s has been executed. It may take up to a few minutes until all CDN caches have been cleared. Please be patient before you initiate another cache-clear command.</source>
+            </trans-unit>
+            <trans-unit id="flashMessage.extensionDependencyError.title">
+                <source>Extension Dependency Error</source>
+            </trans-unit>
+            <trans-unit id="flashMessage.extensionDependencyError.message">
+                <source>This extension depends on the extension &quot;AWS SDK for PHP&quot; (extension key: aws_sdk_php). Please install the missing dependency.</source>
+            </trans-unit>
+            <trans-unit id="flashMessage.noDistributionsConfigured.title">
+                <source>Configuration Warning</source>
+            </trans-unit>
+            <trans-unit id="flashMessage.noDistributionsConfigured.message">
+                <source>No CloudFront distributions have been configured yet. Please go to the &quot;List&quot; view and add one or more CloudFront distributions on the root page (page ID 0). Read the documentation for further details.</source>
+            </trans-unit>
+            <trans-unit id="flashMessage.noDistributionDetailsAvailable.message">
+                <source>Could not retrieve CloudFront distribution details.</source>
+            </trans-unit>
+
+            <trans-unit id="details.label.distributionId">
+                <source>Distribution ID</source>
+            </trans-unit>
+            <trans-unit id="details.label.domainName">
+                <source>Domain name</source>
+            </trans-unit>
+            <trans-unit id="details.label.status">
+                <source>Status</source>
+            </trans-unit>
+            <trans-unit id="details.label.arn">
+                <source>ARN</source>
+            </trans-unit>
+            <trans-unit id="details.label.lastModifiedTime">
+                <source>Last modified time</source>
+            </trans-unit>
+            <trans-unit id="details.label.loggingEnabled">
+                <source>Logging</source>
+            </trans-unit>
+            <trans-unit id="details.label.comment">
+                <source>Comment/Description</source>
+            </trans-unit>
+            <trans-unit id="details.label.priceClass">
+                <source>Price class</source>
+            </trans-unit>
+            <trans-unit id="details.label.httpVersion">
+                <source>Supported HTTP versions</source>
+            </trans-unit>
+
+            <trans-unit id="copyValueToClipboard">
+                    <source>Copy value to clipboard</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

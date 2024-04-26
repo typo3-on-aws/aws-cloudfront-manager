@@ -1,0 +1,174 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+      xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+<f:section name="content">
+
+    <f:if condition="{distributionDetails}">
+    <f:then>
+        <f:if condition="{distributionDetails.success} = 'TRUE'">
+            <f:then>
+                <f:if condition="{distributionDetails.distribution}">
+                <f:then>
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="row mb-4">
+                                    <div class="col">
+                                        <label for="distributionId" class="form-label">
+                                            <f:translate extensionName="AwsCloudfrontManager" key="details.label.distributionId" />
+                                        </label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="distributionId" value="{distributionDetails.distribution.Id}" aria-describedby="distributionIdDescription" disabled>
+                                            <button class="btn btn-outline-secondary" type="button">
+                                                <typo3-copy-to-clipboard text="{distributionDetails.distribution.Id}" title="{f:translate(key: 'copyValueToClipboard', extensionName: 'AwsCloudfrontManager')}">
+                                                    <core:icon identifier="actions-clipboard" size="small" />
+                                                </typo3-copy-to-clipboard>
+                                            </button>
+                                        </div>
+                                        <div id="distributionIdDescription" class="form-text form-extra-help">Foobar...</div>
+                                    </div>
+                                    <div class="col">
+                                        <label for="distributionDomainName" class="form-label">
+                                            <f:translate extensionName="AwsCloudfrontManager" key="details.label.domainName" />
+                                        </label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="distributionDomainName" value="{distributionDetails.distribution.DomainName}" aria-describedby="distributionDomainNameDescription" disabled>
+                                            <button class="btn btn-outline-secondary" type="button">
+                                                <typo3-copy-to-clipboard text="{distributionDetails.distribution.DomainName}" title="{f:translate(key: 'copyValueToClipboard', extensionName: 'AwsCloudfrontManager')}">
+                                                    <core:icon identifier="actions-clipboard" size="small" />
+                                                </typo3-copy-to-clipboard>
+                                            </button>
+                                        </div>
+                                        <div id="distributionDomainNameDescription" class="form-text form-extra-help">Foobar...</div>
+                                    </div>
+                                    <div class="col">
+                                        <label for="distributionStatus" class="form-label">
+                                            <f:translate extensionName="AwsCloudfrontManager" key="details.label.status" />
+                                        </label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="distributionStatus" value="{distributionDetails.distribution.Status}" aria-describedby="distributionStatusDescription" disabled>
+                                            <f:if condition="{distributionDetails.distribution.Status} == 'Deployed'">
+                                            <f:then>
+                                                <button class="btn btn-outline-secondary" type="button" id="" style="color: green;" disabled>
+                                                    <core:icon identifier="actions-check-square-alt" size="small" />
+                                                </button>
+                                            </f:then>
+                                            <f:else>
+                                                <button class="btn btn-outline-secondary" type="button" id="" style="color: red;" disabled>
+                                                    <core:icon identifier="actions-clock" size="small" />
+                                                </button>
+                                            </f:else>
+                                            </f:if>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col">
+                                        <label for="distributionArn" class="form-label">
+                                            <f:translate extensionName="AwsCloudfrontManager" key="details.label.arn" />
+                                        </label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="distributionArn" value="{distributionDetails.distribution.ARN}" aria-describedby="distributionArnDescription" disabled>
+                                            <button class="btn btn-outline-secondary" type="button">
+                                                <typo3-copy-to-clipboard text="{distributionDetails.distribution.ARN}" title="{f:translate(key: 'copyValueToClipboard', extensionName: 'AwsCloudfrontManager')}">
+                                                    <core:icon identifier="actions-clipboard" size="small" />
+                                                </typo3-copy-to-clipboard>
+                                            </button>
+                                        </div>
+                                        <div id="distributionArnDescription" class="form-text form-extra-help">Foobar...</div>
+                                    </div>
+                                    <div class="col">
+                                        <label for="distributionLastModifiedTime" class="form-label">
+                                            <f:translate extensionName="AwsCloudfrontManager" key="details.label.lastModifiedTime" />
+                                        </label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="distributionLastModifiedTime" value="{distributionDetails.distribution.LastModifiedTime}" aria-describedby="distributionLastModifiedTimeDescription" disabled>
+                                            <button class="btn btn-outline-secondary" type="button">
+                                                <typo3-copy-to-clipboard text="{distributionDetails.distribution.LastModifiedTime}" title="{f:translate(key: 'copyValueToClipboard', extensionName: 'AwsCloudfrontManager')}">
+                                                    <core:icon identifier="actions-clipboard" size="small" />
+                                                </typo3-copy-to-clipboard>
+                                            </button>
+                                        </div>
+                                        <div id="distributionLastModifiedTimeDescription" class="form-text form-extra-help">Foobar...</div>
+                                    </div>
+                                    <div class="col">
+                                    </div>
+                                </div>
+
+                                <hr />
+
+                                <div class="row mb-4">
+                                    <div class="col">
+                                        <label for="distributionComment" class="form-label">
+                                            <f:translate extensionName="AwsCloudfrontManager" key="details.label.comment" />
+                                        </label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="distributionComment" value="{distributionDetails.distribution.DistributionConfig.Comment}" aria-describedby="distributionCommentDescription" disabled>
+                                            <button class="btn btn-outline-secondary" type="button">
+                                                <typo3-copy-to-clipboard text="{distributionDetails.distribution.DistributionConfig.Comment}"  title="{f:translate(key: 'copyValueToClipboard', extensionName: 'AwsCloudfrontManager')}">
+                                                    <core:icon identifier="actions-clipboard" size="small" />
+                                                </typo3-copy-to-clipboard>
+                                            </button>
+                                        </div>
+                                        <div id="distributionCommentDescription" class="form-text form-extra-help">Foobar...</div>
+                                    </div>
+                                    <div class="col">
+                                        <label for="distributionPriceClass" class="form-label">
+                                            <f:translate extensionName="AwsCloudfrontManager" key="details.label.priceClass" />
+                                        </label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="distributionPriceClass" value="{distributionDetails.distribution.DistributionConfig.PriceClass}" aria-describedby="distributionPriceClassDescription" disabled>
+                                        </div>
+                                        <div id="distributionPriceClassDescription" class="form-text form-extra-help">Foobar...</div>
+                                    </div>
+                                    <div class="col">
+                                        <label for="distributionHttpVersion" class="form-label">
+                                            <f:translate extensionName="AwsCloudfrontManager" key="details.label.httpVersion" />
+                                        </label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="distributionHttpVersion" value="{distributionDetails.distribution.DistributionConfig.HttpVersion}" aria-describedby="distributionHttpVersionDescription" disabled>
+                                        </div>
+                                        <div id="distributionHttpVersionDescription" class="form-text form-extra-help">Foobar...</div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <f:link.action action="invalidation" class="btn btn-default" arguments="{distribution: distribution}">
+                                        <f:translate extensionName="AwsCloudfrontManager" key="button.clearCache" />
+                                    </f:link.action>
+                                    <f:link.action action="distributionDetails" class="btn btn-default" arguments="{distribution: distribution}" additionalParams="{refresh: 'true'}">
+                                        <f:translate extensionName="AwsCloudfrontManager" key="button.refresh" />
+                                    </f:link.action>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </f:then>
+                </f:if>
+            </f:then>
+        </f:if>
+    </f:then>
+    <f:else>
+        <div class="typo3-messages">
+            <div class="alert alert-danger">
+                <div class="media">
+                    <div class="media-left">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="alert-title m-0">
+                            <f:translate extensionName="AwsCloudfrontManager" key="flashMessage.noDistributionDetailsAvailable.message" />
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </f:else>
+    </f:if>
+
+</f:section>
+
+</html>

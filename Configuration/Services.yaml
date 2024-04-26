@@ -1,0 +1,28 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  T3rrific\AwsCloudfrontManager\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+
+  cache.aws_cloudfront_manager:
+    class: TYPO3\CMS\Core\Cache\Frontend\FrontendInterface
+    factory: ['@TYPO3\CMS\Core\Cache\CacheManager', 'getCache']
+    arguments: ['aws_cloudfront_manager']
+
+  T3rrific\AwsCloudfrontManager\Controller\AbstractController:
+    arguments:
+      $cache: '@cache.aws_cloudfront_manager'
+
+  T3rrific\AwsCloudfrontManager\Controller\BackendController:
+    arguments:
+      $cache: '@cache.aws_cloudfront_manager'
+
+  T3rrific\AwsCloudfrontManager\Utility\AwsExceptionHandler:
+    public: true;
+
+  T3rrific\AwsCloudfrontManager\Controller\UserSessionService:
+    public: true;

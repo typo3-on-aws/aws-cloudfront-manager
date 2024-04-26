@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-02-22T00:00:00Z" product-name="aws_cloudfront_manager">
+        <header/>
+        <body>
+
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_awsaccount">
+                <source>AWS Accounts</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_awsaccount.label.accessKeyId">
+                <source>Access Key ID</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_awsaccount.description.accessKeyId">
+                <source>Access key ID of an IAM user (for example &quot;AKIAI1234567890EF&quot;).</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_awsaccount.label.secretAccessKey">
+                <source>Secret Access Key</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_awsaccount.description.secretAccessKey">
+                <source>Secret access key of an IAM user (for example &quot;wJalrXUtnFEMI/K7MDENG/bPxRfiCYexample&quot;).</source>
+            </trans-unit>
+
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution">
+                <source>CloudFront Distributions</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.label.distributionId">
+                <source>Distribution ID</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.description.distributionId">
+                <source></source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.label.awsAccountId">
+                <source>AWS Account ID</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.description.awsAccountId">
+                <source>(Optional) Select a previously created AWS account that has the permissions to interact with the CloudFront distribution (e.g. trigger cache invalidations).</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.label.paths">
+                <source>Paths</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.description.paths">
+                <source>List of paths to invalidate. Each path in a single line. You can specify either the path for individual files or a path that ends with the &#42; wildcard.</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.label.domainName">
+                <source>Domain Name</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.description.domainName">
+                <source>(Read-only) CloudFront domain name assigned by AWS.</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.label.comment">
+                <source>Comment</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.description.comment">
+                <source>(Read-only) Comment entered when the CloudFront distribution was created/updated, if any.</source>
+            </trans-unit>
+
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.tabs.awsAccount">
+                <source>AWS Account</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.tabs.additionalInformation">
+                <source>Additional Information</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

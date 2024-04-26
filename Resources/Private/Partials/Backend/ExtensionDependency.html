@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+      xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div>
+    <div class="row mt-5">
+        <div class="col-6">
+            <h2>Composer-based TYPO3 Installations</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>Execute the following command on the command line to install the missing extension if your TYPO3 installation uses Composer:</p>
+                    <code>composer require aws/aws-sdk-php</code>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <h2>Legacy TYPO3 Installations</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>To install the missing extension in a legacy TYPO3 installation (without Composer), follow these steps:</p>
+                    <ul>
+                        <li>Make sure you're logged in at the TYPO3 backend as an administrator user.</li>
+                        <li>Open the <strong>Extension Manager</strong> and update the extension list if required.</li>
+                        <li>Search for the extension key <code>aws_sdk_php</code>.</li>
+                        <li>Click the install icon next to the extension.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

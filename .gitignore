@@ -1,0 +1,22 @@
+# Ignore temporary files
+*~
+*.bak
+*.swp
+*.xxx
+*~
+.DS_Store
+*.log
+
+# Ignore by common IDEs used directories/files
+nbproject
+*.idea
+*.project
+*.vscode
+.buildpath
+.settings
+.TemporaryItems
+.webprj
+.fleet
+
+# Project-specific files and folders
+Resources/Public/Icons/*
