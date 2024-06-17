@@ -50,7 +50,7 @@
                 <source>This extension depends on the extension &quot;AWS SDK for PHP&quot; (extension key: aws_sdk_php). Please install the missing dependency.</source>
             </trans-unit>
             <trans-unit id="flashMessage.noDistributionsConfigured.title">
-                <source>Configuration Warning</source>
+                <source>Missing Configuration</source>
             </trans-unit>
             <trans-unit id="flashMessage.noDistributionsConfigured.message">
                 <source>No CloudFront distributions have been configured yet. Please go to the &quot;List&quot; view and add one or more CloudFront distributions on the root page (page ID 0). Read the documentation for further details.</source>
