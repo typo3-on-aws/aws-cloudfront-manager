@@ -5,7 +5,6 @@ namespace T3rrific\AwsCloudfrontManager\Service\AmazonWebServices;
 /**
  * Amazon CloudFront Manager
  * @author Michael Schams | https://schams.net | https://t3rrific.com
- * Based on EXT:sf_event_mgt by Torben Hansen <derhansen@gmail.com> | https://github.com/derhansen/sf_event_mgt
  *
  * See README.md and/or LICENSE.md for copyright and license information.
  */
