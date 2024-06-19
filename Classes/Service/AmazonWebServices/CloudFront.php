@@ -35,10 +35,6 @@ class CloudFront extends Authentication
     public function createInvalidation(string $distributionId, array $paths, ?string $callerReference = null): ?array
     {
         $cloudFrontClient = new CloudFrontClient($this->getConfiguration());
-
-        $stream = fopen("debug.log", "a");
-        fputs($stream, print_r($paths, true) . PHP_EOL);
-
         try {
             $result = $cloudFrontClient->createInvalidation([
                 'DistributionId' => $distributionId,
@@ -71,10 +67,6 @@ class CloudFront extends Authentication
     public function getDistribution(string $distributionId): ?array
     {
         $cloudFrontClient = new CloudFrontClient($this->getConfiguration());
-
-        $stream = fopen("debug.log", "a");
-        fputs($stream, "Distribution ID: " . $distributionId . "\n");
-
         try {
             $result = $cloudFrontClient->getDistribution([
                 'Id' => $distributionId
