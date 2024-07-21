@@ -9,7 +9,7 @@ declare(strict_types=1);
  */
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Amazon CloudFront Manager',
+    'title' => 'AWS CloudFront Manager',
     'description' => 'Backend module that lets backend users trigger Amazon CloudFront invalidations',
     'category' => 'backend',
     'author' => 'Michael Schams',
