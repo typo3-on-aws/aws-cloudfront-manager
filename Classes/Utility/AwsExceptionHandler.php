@@ -3,7 +3,7 @@ declare(strict_types=1);
 namespace T3rrific\AwsCloudfrontManager\Utility;
 
 /**
- * Amazon CloudFront Integration for TYPO3 CMS
+ * AWS CloudFront Integration for TYPO3 CMS
  * @author Michael Schams | https://schams.net | https://t3rrific.com
  *
  * See README.md and/or LICENSE.md for copyright and license information.
