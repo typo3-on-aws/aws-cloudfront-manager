@@ -41,7 +41,7 @@ Once the AWS permissions are in place, continue and add the CloudFront distribut
 1. Log in to the TYPO3 backend as a user with system maintainer privileges (administrator).
 2. Go to the **Web ➜ List** module and open the first page in the page tree (page ID `0`).
 3. Click the button **Create new record** at the top.
-4. Locate the section **Amazon CloudFront Manager** and determine if you have to configure AWS accounts.
+4. Locate the section **AWS CloudFront Manager** and determine if you have to configure AWS accounts.
 
 If your TYPO3 system runs in the AWS cloud and your EC2 instance uses an *instance profile* with a properly configured IAM role attached to it, you don't need to configure AWS accounts if the role permission policy covers the access actions as described above. Continue with step 5 below.
 
@@ -61,7 +61,7 @@ Repeat the process for every CloudFront distribution you want to manage.
 
 ## Grant Backend Users Access
 
-You can use TYPO3's backend user and user group configuration to grant any backend user access to the Amazon CloudFront Manager backend module.
+You can use TYPO3's backend user and user group configuration to grant any backend user access to the AWS CloudFront Manager backend module.
 
 System maintainers (administrator) have full access to all backend modules and functions anyway. No configuration is required to allow system maintainers clear the cache of a CloudFront distribution or access its details.
 

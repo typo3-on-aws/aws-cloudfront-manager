@@ -1,4 +1,4 @@
-# Amazon CloudFront Manager
+# AWS CloudFront Manager
 
 | **Extension key:**             | `aws_cloudfront_manager`                                                                     |
 | :----------------------------- | :------------------------------------------------------------------------------------------- |
