@@ -13,7 +13,19 @@ div.tx-awscloudfront-manager .typo3-messages .alert {
     margin-bottom: 2rem;
 }
 
+div.tx-awscloudfront-manager .typo3-messages .media .media-left {
+    display: none;
+}
+
+div.tx-awscloudfront-manager .typo3-messages .media .media-body {
+    text-align: center;
+}
+
 div.tx-awscloudfront-manager table {
+}
+
+div.tx-awscloudfront-manager table td {
+    padding: .2rem .4rem;
 }
 
 div.tx-awscloudfront-manager table td.distributionId {
