@@ -15,7 +15,7 @@ use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
 
 /**
- * Exception Handler
+ * Amazon Web Services Exception Handler
  */
 class AwsExceptionHandler
 {

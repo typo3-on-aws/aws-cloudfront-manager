@@ -12,7 +12,7 @@ namespace T3rrific\AwsCloudfrontManager\Service\AmazonWebServices;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
- *
+ * Amazon Web Services authentication class
  */
 class Authentication
 {
@@ -27,7 +27,7 @@ class Authentication
     protected array $credentials;
 
     /**
-     *
+     * Set access credentials, e.g. ['key' => $accessKeyId, 'secret' => $secretAccessKey]
      */
     public function setCredentials(array $credentials): void
     {
@@ -35,7 +35,7 @@ class Authentication
     }
 
     /**
-     *
+     * Get configuration
      */
     public function getConfiguration(): array
     {

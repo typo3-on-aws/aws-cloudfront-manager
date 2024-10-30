@@ -14,12 +14,12 @@ use T3rrific\AwsCloudfrontManager\Utility\AwsExceptionHandler;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
- *
+ * Amazon Web Services authentication class
  */
 class CloudFront extends Authentication
 {
     /**
-     *
+     * Constructor.
      */
     public function __construct()
     {
@@ -30,7 +30,7 @@ class CloudFront extends Authentication
     }
 
     /**
-     *
+     * Create an invalidation request.
      */
     public function createInvalidation(string $distributionId, array $paths, ?string $callerReference = null): ?array
     {
@@ -62,7 +62,7 @@ class CloudFront extends Authentication
     }
 
     /**
-     * Get the information about a distribution
+     * Get the information about a distribution.
      */
     public function getDistribution(string $distributionId): ?array
     {
