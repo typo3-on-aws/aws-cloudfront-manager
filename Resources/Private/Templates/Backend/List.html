@@ -1,0 +1,67 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:layout name="Module" />
+    <f:section name="Content">
+        <div class="tx-awscloudfront-manager">
+
+            <h1><f:translate extensionName="AwsCloudfrontManager" key="title.listDistributions" /></h1>
+
+            <f:if condition="{distributions}">
+            <f:then>
+                <div class="table-fit">
+                    <table class="table table-striped table-hover">
+                        <tr>
+                            <th><f:translate extensionName="AwsCloudfrontManager" key="general.distributionId" /></th>
+                            <th><f:translate extensionName="AwsCloudfrontManager" key="general.domainName" /></th>
+                            <th><f:translate extensionName="AwsCloudfrontManager" key="general.comment" /></th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <f:for each="{distributions}" as="distribution">
+                            <tr data-distribution-id="{distribution.distributionId}">
+                                <td class="distributionId">
+                                    <f:be.link route="aws_cloudfront_manager.details" parameters="{distributionId: distribution.distributionId}">
+                                        <strong>{distribution.distributionId}</strong>
+                                    </f:be.link>
+                                </td>
+                                <td class="domainName">
+                                    <f:if condition="{distribution.domainName}">
+                                    <f:then>
+                                        <code>{distribution.domainName}</code>
+                                    </f:then>
+                                    <f:else>
+                                        <i><f:translate extensionName="AwsCloudfrontManager" key="general.domainNameEmpty" /></i>
+                                    </f:else>
+                                    </f:if>
+                                </td>
+                                <td class="comment">
+                                    <f:if condition="{distribution.comment}">
+                                    <f:then>
+                                        <code>{distribution.comment}</code>
+                                    </f:then>
+                                    <f:else>
+                                        <i><f:translate extensionName="AwsCloudfrontManager" key="general.commentEmpty" /></i>
+                                    </f:else>
+                                    </f:if>
+                                </td>
+                                <td class="actions">
+                                    <f:be.link route="aws_cloudfront_manager.invalidation" class="btn btn-default" parameters="{distributionId: distribution.distributionId}">
+                                        <f:translate extensionName="AwsCloudfrontManager" key="button.clearCache" />
+                                    </f:be.link>
+                                    <f:be.link route="aws_cloudfront_manager.details" class="btn btn-default" parameters="{distributionId: distribution.distributionId}">
+                                        <f:translate extensionName="AwsCloudfrontManager" key="button.details" />
+                                    </f:be.link>
+                                </td>
+                            </tr>
+                        </f:for>
+                    </table>
+                </div>
+            </f:then>
+            <f:else>
+                <p>
+                    Documentation at GitHub: <f:link.external uri="https://github.com/typo3-on-aws/aws-cloudfront-manager/" target="_blank">https://github.com/typo3-on-aws/aws-cloudfront-manager/</f:link.external>
+                </p>
+            </f:else>
+            </f:if>
+        </div>
+    </f:section>
+
+</html>
