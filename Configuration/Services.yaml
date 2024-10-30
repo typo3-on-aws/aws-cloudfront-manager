@@ -13,11 +13,8 @@ services:
     factory: ['@TYPO3\CMS\Core\Cache\CacheManager', 'getCache']
     arguments: ['aws_cloudfront_manager']
 
-  T3rrific\AwsCloudfrontManager\Controller\AbstractController:
-    arguments:
-      $cache: '@cache.aws_cloudfront_manager'
-
   T3rrific\AwsCloudfrontManager\Controller\BackendController:
+    tags: ['backend.controller']
     arguments:
       $cache: '@cache.aws_cloudfront_manager'
 

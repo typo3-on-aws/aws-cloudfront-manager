@@ -13,19 +13,27 @@ use T3rrific\AwsCloudfrontManager\Controller\BackendController;
  * Configure backend module, path, position, etc.
  */
 return [
-    'admin_cloudfront_manager' => [
+    'aws_cloudfront_manager' => [
         'parent' => 'site',
-        'position' => ['after' => 'site_redirects'],
+        'position' => ['bottom'],
         'access' => 'user',
         'workspaces' => 'live',
         'path' => '/module/cloudfront-manager',
         'labels' => 'LLL:EXT:aws_cloudfront_manager/Resources/Private/Language/locallang_mod.xlf',
         'iconIdentifier' => 'module-aws-cloudfront-manager',
-        'extensionName' => 'AwsCloudfrontManager',
-        'controllerActions' => [
-            BackendController::class => [
-                'listDistributions', 'distributionDetails', 'invalidation'
-            ]
+        'routes' => [
+            '_default' => [
+                'path' => '/list',
+                'target' => BackendController::class . '::listAction',
+            ],
+            'details' => [
+                'path' => '/details/{distributionId}',
+                'target' => BackendController::class . '::DetailsAction',
+            ],
+            'invalidation' => [
+                'path' => '/invalidation/{distributionId}',
+                'target' => BackendController::class . '::InvalidationAction',
+            ],
         ]
     ]
 ];
