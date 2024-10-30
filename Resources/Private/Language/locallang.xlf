@@ -41,7 +41,7 @@
                 <source>Invalidation Triggered</source>
             </trans-unit>
             <trans-unit id="flashMessage.invalidationTriggered.message">
-                <source>A cache-clear request for the CloudFront distribution %1$s has been executed. It may take up to a few minutes until all CDN caches have been cleared. Please be patient before you initiate another cache-clear command.</source>
+                <source>A cache-clear request has been executed for the CloudFront distribution. It may take up to a few minutes until all CDN caches have been cleared. Please be patient before you initiate another cache-clear command.</source>
             </trans-unit>
             <trans-unit id="flashMessage.extensionDependencyError.title">
                 <source>Extension Dependency Error</source>
