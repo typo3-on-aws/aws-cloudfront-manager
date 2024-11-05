@@ -97,7 +97,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'readOnly' => true
+                'readOnly' => true,
+                'nullable' => true
             ],
         ],
         'comment' => [
@@ -107,7 +108,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'readOnly' => true
+                'readOnly' => true,
+                'nullable' => true
             ],
         ],
         'paths' => [
