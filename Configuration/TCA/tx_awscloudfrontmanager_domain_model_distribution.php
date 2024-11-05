@@ -61,11 +61,6 @@ return [
             ],
         ],
 
-        'cruser_id' => [
-            'config' => [
-                'type' => 'passthrough',
-            ],
-        ],
         'distribution_id' => [
             'exclude' => false,
             'label' => 'LLL:EXT:' . $languageFile . ':tx_awscloudfrontmanager_domain_model_distribution.label.distributionId',
