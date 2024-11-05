@@ -136,14 +136,17 @@
                                         <div class="d-flex justify-content-between">
                                             <div class="">
                                                 <f:be.link class="btn btn-default" route="aws_cloudfront_manager">
+                                                    <core:icon identifier="actions-caret-left" size="small" />
                                                     <f:translate extensionName="AwsCloudfrontManager" key="button.backToList" />
                                                 </f:be.link>
                                             </div>
                                             <div class="">
                                                 <f:be.link class="btn btn-default me-1" route="aws_cloudfront_manager.invalidation" parameters="{distributionId: distribution.distributionId}">
+                                                    <core:icon identifier="apps-toolbar-menu-cache" size="small" />
                                                     <f:translate extensionName="AwsCloudfrontManager" key="button.clearCache" />
                                                 </f:be.link>
                                                 <f:be.link class="btn btn-default" route="aws_cloudfront_manager.details" parameters="{distributionId: distribution.distributionId, refresh: 'true'}">
+                                                    <core:icon identifier="actions-refresh" size="small" />
                                                     <f:translate extensionName="AwsCloudfrontManager" key="button.refresh" />
                                                 </f:be.link>
                                             </div>

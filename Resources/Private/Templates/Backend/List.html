@@ -44,9 +44,11 @@
                                 </td>
                                 <td class="actions">
                                     <f:be.link route="aws_cloudfront_manager.invalidation" class="btn btn-default" parameters="{distributionId: distribution.distributionId}">
+                                        <core:icon identifier="apps-toolbar-menu-cache" size="small" />
                                         <f:translate extensionName="AwsCloudfrontManager" key="button.clearCache" />
                                     </f:be.link>
                                     <f:be.link route="aws_cloudfront_manager.details" class="btn btn-default" parameters="{distributionId: distribution.distributionId}">
+                                        <core:icon identifier="actions-list-alternative" size="small" />
                                         <f:translate extensionName="AwsCloudfrontManager" key="button.details" />
                                     </f:be.link>
                                 </td>
