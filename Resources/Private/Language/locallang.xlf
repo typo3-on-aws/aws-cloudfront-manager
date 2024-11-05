@@ -27,6 +27,9 @@
                 <source>not available</source>
             </trans-unit>
 
+            <trans-unit id="button.backToList">
+                <source>Back to List</source>
+            </trans-unit>
             <trans-unit id="button.clearCache">
                 <source>Clear CDN Cache</source>
             </trans-unit>
