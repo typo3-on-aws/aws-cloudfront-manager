@@ -31,12 +31,12 @@ class Distribution extends AbstractEntity
     /**
      * CloudFront domain name
      */
-    protected ?string $domainName;
+    protected ?string $domainName = '';
 
     /**
      * Comment
      */
-    protected ?string $comment;
+    protected ?string $comment = '';
 
     /**
      * Paths
