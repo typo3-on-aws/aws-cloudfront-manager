@@ -120,7 +120,8 @@ return [
                 'type' => 'text',
                 'cols' => 30,
                 'rows' => 5,
-                'eval' => 'trim,required'
+                'eval' => 'trim,required',
+                'default' => '/*'
             ],
         ],
 
