@@ -3,11 +3,11 @@
 | **Extension key:**             | `aws_cloudfront_manager`                                                                     |
 | :----------------------------- | :------------------------------------------------------------------------------------------- |
 | **Package name:**              | `t3rrific/aws-cloudfront-manager`                                                            |
-| **Version:**                   | 1.0.x                                                                                        |
+| **Version:**                   | 2.0.x                                                                                        |
 | **Code insight:**              | [GitHub repository](https://github.com/typo3-on-aws/aws-cloudfront-manager)                  |
 | **Author:**                    | Michael Schams \| [<schams.net>](https://schams.net) \| [t3rrific.com](https://t3rrific.com) |
 | **Documentation language:**    | English                                                                                      |
-| **Documentation last update:** | 28 June 2024                                                                                |
+| **Documentation last update:** | 6 November 2024                                                                              |
 
 ## Summary
 

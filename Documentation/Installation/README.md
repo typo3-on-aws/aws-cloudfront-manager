@@ -2,10 +2,11 @@
 
 ## Compatibility
 
-| Extension Version        | TYPO3 Core Version |
-| :----------------------- | :----------------- |
-| v1.x                     | TYPO3 v12 LTS      |
-| v2.x (Git branch `main`) | TYPO3 v13.x        |
+| Extension Version  | TYPO3 Core Version | State       |
+| -----------------: | :----------------- | :---------- |
+| v1.x               | TYPO3 v12 LTS      | stable      |
+| v2.x               | TYPO3 v13 LTS      | stable      |
+| Git branch `main`  | TYPO3 v13 LTS      | development |
 
 TYPO3 versions before v12 LTS are not supported.
 
@@ -20,7 +21,7 @@ The AWS CloudFront Manager extension uses the official [AWS SDK for PHP](https:/
 Execute the following Composer command in the project directory of your TYPO3 instance to install the extension in a Composer-based TYPO3 installation:
 
 ```bash
-composer require t3rrific/aws-cloudfront-manager:^1
+composer require t3rrific/aws-cloudfront-manager
 ```
 
 This command resolves dependencies, downloads all required packages (incl. the AWS SDK for PHP), and installs the extension in your TYPO3 system.
