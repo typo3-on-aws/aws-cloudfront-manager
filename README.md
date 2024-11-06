@@ -2,7 +2,7 @@
 
 This [TYPO3](https://typo3.org) extension provides a backend module to let backend users with appropriate access privileges clear the CDN cache of [Amazon CloudFront](https://aws.amazon.com/cloudfront/) distributions (*cache invalidations*).
 
-[<img src="Documentation/Images/typo3v12-list-view-video.png">](https://t3rrific.com/videos/aws-cloudfront-manager-for-typo3/)
+[<img src="Documentation/Images/typo3v13-list-view-video.png">](https://t3rrific.com/videos/aws-cloudfront-manager-for-typo3/)
 
 ➤ Read the [documentation](https://github.com/typo3-on-aws/aws-cloudfront-manager/blob/release/Documentation/README.md) for further details.
 
