@@ -8,8 +8,8 @@ This [TYPO3](https://typo3.org) extension provides a backend module to let backe
 
 ## Requirements and Compatibility
 
-- TYPO3 v12 LTS, PHP 8.1 or higher.
-- TYPO3 v13.x, PHP 8.2 or higher, *in development*.
+- TYPO3 v12 LTS, PHP 8.1 or higher (extension version 1.x).
+- TYPO3 v13 LTS, PHP 8.2 or higher (extension version 2.x).
 
 ## Quick Installation Guide
 
