@@ -5,7 +5,7 @@ declare(strict_types=1);
  * AWS CloudFront Manager
  * @author Michael Schams | https://schams.net | https://t3rrific.com
  *
- * See README.md and/or LICENSE.md for copyright and license information.
+ * See README.md and/or LICENSE.txt for copyright and license information.
  */
 
 $languageFile = 'aws_cloudfront_manager/Resources/Private/Language/locallang_db.xlf';

@@ -6,7 +6,7 @@ namespace T3rrific\AwsCloudfrontManager\Utility;
  * AWS CloudFront Integration for TYPO3 CMS
  * @author Michael Schams | https://schams.net | https://t3rrific.com
  *
- * See README.md and/or LICENSE.md for copyright and license information.
+ * See README.md and/or LICENSE.txt for copyright and license information.
  */
 
 use Aws\Exception\AwsException;

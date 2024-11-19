@@ -7,7 +7,7 @@ namespace T3rrific\AwsCloudfrontManager\Service;
  * @author Michael Schams | https://schams.net | https://t3rrific.com
  * Based on EXT:sf_event_mgt by Torben Hansen <derhansen@gmail.com> | https://github.com/derhansen/sf_event_mgt
  *
- * See README.md and/or LICENSE.md for copyright and license information.
+ * See README.md and/or LICENSE.txt for copyright and license information.
  */
 
 use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
