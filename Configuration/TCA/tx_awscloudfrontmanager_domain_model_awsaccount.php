@@ -36,8 +36,6 @@ return [
                 'renderType' => 'checkboxToggle',
                 'items' => [
                     [
-                        0 => '',
-                        1 => '',
                         'invertStateDisplay' => true
                     ]
                 ],
