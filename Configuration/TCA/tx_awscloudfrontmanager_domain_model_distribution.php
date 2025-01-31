@@ -65,7 +65,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required'
+                'eval' => 'trim',
+                'required' => true
             ],
         ],
         'aws_account_id' => [
@@ -117,7 +118,8 @@ return [
                 'type' => 'text',
                 'cols' => 30,
                 'rows' => 5,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
                 'default' => '/*'
             ],
         ],
