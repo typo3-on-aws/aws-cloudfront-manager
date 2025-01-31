@@ -24,9 +24,6 @@ return [
         'iconfile' => 'EXT:aws_cloudfront_manager/Resources/Public/Icons/distribution.svg',
         'rootLevel' => 1,
     ],
-    'interface' => [
-        'showRecordFieldList' => 'hidden, distribution_id, aws_account_id, domain_name, comment, paths',
-    ],
     'types' => [
         '1' => [
             'showitem' => implode(',', [

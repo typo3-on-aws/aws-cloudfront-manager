@@ -24,9 +24,6 @@ return [
         'iconfile' => 'EXT:aws_cloudfront_manager/Resources/Public/Icons/awsaccount.svg',
         'rootLevel' => 1,
     ],
-    'interface' => [
-        'showRecordFieldList' => 'hidden, access_key_id, secret_access_key',
-    ],
     'types' => [
         '1' => ['showitem' => 'hidden, access_key_id, secret_access_key, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access'],
     ],
