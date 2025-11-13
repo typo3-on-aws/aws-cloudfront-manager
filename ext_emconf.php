@@ -4,7 +4,7 @@
  * AWS CloudFront Manager
  * @author Michael Schams | https://schams.net | https://t3rrific.com
  *
- * See README.md and/or LICENSE.md for copyright and license information.
+ * See README.md and/or LICENSE.txt for copyright and license information.
  */
 
 $EM_CONF[$_EXTKEY] = [
@@ -14,10 +14,10 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Michael Schams',
     'state' => 'beta',
     'clearCacheOnLoad' => 0,
-    'version' => '1.0.1',
+    'version' => '2.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.0.0-12.99.99',
+            'typo3' => '13.0.0-13.4.99',
         ],
         'conflicts' => [
         ],

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2024-02-22T00:00:00Z" product-name="aws_cloudfront_manager">
+    <file source-language="en" datatype="plaintext" original="messages" date="2025-11-14T00:00:00Z" product-name="aws_cloudfront_manager">
         <header/>
         <body>
 
             <trans-unit id="tx_awscloudfrontmanager_domain_model_awsaccount">
                 <source>AWS Accounts</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_awsaccount.label.hidden">
+                <source>Account active</source>
             </trans-unit>
             <trans-unit id="tx_awscloudfrontmanager_domain_model_awsaccount.label.accessKeyId">
                 <source>Access Key ID</source>
@@ -22,6 +25,9 @@
 
             <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution">
                 <source>CloudFront Distributions</source>
+            </trans-unit>
+            <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.label.hidden">
+                <source>Distribution active</source>
             </trans-unit>
             <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.label.distributionId">
                 <source>Distribution ID</source>

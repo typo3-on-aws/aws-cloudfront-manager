@@ -20,7 +20,7 @@ TYPO3 caches the retrieved data internally for one hour by default. You can forc
 
 You can initiate a CDN cache clear in either the list view or in the details view by clicking the button **Clear CDN Cache** (see [third screenshot](../Screenshots/README.md) for an example).
 
-> It important to understand that Amazon CloudFront caches are not immediately cleared when you request a cache invalidation. Although you receive a confirmation message straight away, it may take up to a few minutes until all CDN nodes worldwide have received the command and cleared their caches.
+> It's important to understand that Amazon CloudFront caches are not immediately cleared when you request a cache invalidation. Although you receive a confirmation message straight away, it may take up to a few minutes until all CDN nodes worldwide have received the command and cleared their caches.
 
 Read more in the [AWS documentation](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html).
 

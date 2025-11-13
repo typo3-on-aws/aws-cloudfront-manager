@@ -6,7 +6,7 @@ namespace T3rrific\AwsCloudfrontManager\Domain\Model;
  * AWS CloudFront Manager
  * @author Michael Schams | https://schams.net | https://t3rrific.com
  *
- * See README.md and/or LICENSE.md for copyright and license information.
+ * See README.md and/or LICENSE.txt for copyright and license information.
  */
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
@@ -31,12 +31,12 @@ class Distribution extends AbstractEntity
     /**
      * CloudFront domain name
      */
-    protected string $domainName = '';
+    protected ?string $domainName = '';
 
     /**
      * Comment
      */
-    protected string $comment = '';
+    protected ?string $comment = '';
 
     /**
      * Paths
@@ -78,7 +78,7 @@ class Distribution extends AbstractEntity
     /**
      * Sets the CloudFront domain name
      */
-    public function setDomainName(string $domainName)
+    public function setDomainName(?string $domainName)
     {
         $this->domainName = $domainName;
     }
@@ -86,7 +86,7 @@ class Distribution extends AbstractEntity
     /**
      * Returns the CloudFront domain name
      */
-    public function getDomainName(): string
+    public function getDomainName(): ?string
     {
         return $this->domainName;
     }
@@ -94,7 +94,7 @@ class Distribution extends AbstractEntity
     /**
      * Sets the comment
      */
-    public function setComment(string $comment)
+    public function setComment(?string $comment)
     {
         $this->comment = $comment;
     }
@@ -102,7 +102,7 @@ class Distribution extends AbstractEntity
     /**
      * Returns the comment
      */
-    public function getComment(): string
+    public function getComment(): ?string
     {
         return $this->comment;
     }

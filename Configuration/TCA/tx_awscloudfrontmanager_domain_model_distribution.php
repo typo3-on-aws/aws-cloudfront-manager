@@ -5,7 +5,7 @@ declare(strict_types=1);
  * AWS CloudFront Manager
  * @author Michael Schams | https://schams.net | https://t3rrific.com
  *
- * See README.md and/or LICENSE.md for copyright and license information.
+ * See README.md and/or LICENSE.txt for copyright and license information.
  */
 
 $languageFile = 'aws_cloudfront_manager/Resources/Private/Language/locallang_db.xlf';
@@ -23,9 +23,6 @@ return [
         'searchFields' => 'distribution_id,paths',
         'iconfile' => 'EXT:aws_cloudfront_manager/Resources/Public/Icons/distribution.svg',
         'rootLevel' => 1,
-    ],
-    'interface' => [
-        'showRecordFieldList' => 'hidden, distribution_id, aws_account_id, domain_name, comment, paths',
     ],
     'types' => [
         '1' => [
@@ -46,8 +43,7 @@ return [
                 'renderType' => 'checkboxToggle',
                 'items' => [
                     [
-                        0 => '',
-                        1 => '',
+                        'label' => 'LLL:EXT:' . $languageFile . ':tx_awscloudfrontmanager_domain_model_distribution.label.hidden',
                         'invertStateDisplay' => true
                     ]
                 ],
@@ -61,11 +57,6 @@ return [
             ],
         ],
 
-        'cruser_id' => [
-            'config' => [
-                'type' => 'passthrough',
-            ],
-        ],
         'distribution_id' => [
             'exclude' => false,
             'label' => 'LLL:EXT:' . $languageFile . ':tx_awscloudfrontmanager_domain_model_distribution.label.distributionId',
@@ -73,7 +64,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required'
+                'eval' => 'trim',
+                'required' => true
             ],
         ],
         'aws_account_id' => [
@@ -102,7 +94,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'readOnly' => true
+                'readOnly' => true,
+                'nullable' => true
             ],
         ],
         'comment' => [
@@ -112,7 +105,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'readOnly' => true
+                'readOnly' => true,
+                'nullable' => true
             ],
         ],
         'paths' => [
@@ -123,7 +117,9 @@ return [
                 'type' => 'text',
                 'cols' => 30,
                 'rows' => 5,
-                'eval' => 'trim,required'
+                'eval' => 'trim',
+                'required' => true,
+                'default' => '/*'
             ],
         ],
 

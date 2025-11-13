@@ -6,13 +6,13 @@ namespace T3rrific\AwsCloudfrontManager\Service\AmazonWebServices;
  * AWS CloudFront Manager
  * @author Michael Schams | https://schams.net | https://t3rrific.com
  *
- * See README.md and/or LICENSE.md for copyright and license information.
+ * See README.md and/or LICENSE.txt for copyright and license information.
  */
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
- *
+ * Amazon Web Services authentication class
  */
 class Authentication
 {
@@ -27,7 +27,7 @@ class Authentication
     protected array $credentials;
 
     /**
-     *
+     * Set access credentials, e.g. ['key' => $accessKeyId, 'secret' => $secretAccessKey]
      */
     public function setCredentials(array $credentials): void
     {
@@ -35,7 +35,7 @@ class Authentication
     }
 
     /**
-     *
+     * Get configuration
      */
     public function getConfiguration(): array
     {

@@ -5,7 +5,7 @@ declare(strict_types=1);
  * AWS CloudFront Manager
  * @author Michael Schams | https://schams.net | https://t3rrific.com
  *
- * See README.md and/or LICENSE.md for copyright and license information.
+ * See README.md and/or LICENSE.txt for copyright and license information.
  */
 
 $languageFile = 'aws_cloudfront_manager/Resources/Private/Language/locallang_db.xlf';
@@ -24,9 +24,6 @@ return [
         'iconfile' => 'EXT:aws_cloudfront_manager/Resources/Public/Icons/awsaccount.svg',
         'rootLevel' => 1,
     ],
-    'interface' => [
-        'showRecordFieldList' => 'hidden, access_key_id, secret_access_key',
-    ],
     'types' => [
         '1' => ['showitem' => 'hidden, access_key_id, secret_access_key, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access'],
     ],
@@ -39,8 +36,7 @@ return [
                 'renderType' => 'checkboxToggle',
                 'items' => [
                     [
-                        0 => '',
-                        1 => '',
+                        'label' => 'LLL:EXT:' . $languageFile . ':tx_awscloudfrontmanager_domain_model_awsaccount.label.hidden',
                         'invertStateDisplay' => true
                     ]
                 ],
@@ -66,7 +62,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required'
+                'eval' => 'trim',
+                'required' => true
             ],
         ],
         'secret_access_key' => [
@@ -76,7 +73,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required'
+                'eval' => 'trim',
+                'required' => true
             ],
         ],
     ],
