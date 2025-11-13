@@ -36,6 +36,7 @@ return [
                 'renderType' => 'checkboxToggle',
                 'items' => [
                     [
+                        'label' => 'LLL:EXT:' . $languageFile . ':tx_awscloudfrontmanager_domain_model_awsaccount.label.hidden',
                         'invertStateDisplay' => true
                     ]
                 ],
