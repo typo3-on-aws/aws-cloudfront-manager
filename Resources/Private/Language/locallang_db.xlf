@@ -33,7 +33,7 @@
                 <source>Distribution ID</source>
             </trans-unit>
             <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.description.distributionId">
-                <source></source>
+                <source>AWS CloudFront distribution ID (for example &quot;E1NUGKABCDEF1234&quot;)</source>
             </trans-unit>
             <trans-unit id="tx_awscloudfrontmanager_domain_model_distribution.label.awsAccountId">
                 <source>AWS Account ID</source>
